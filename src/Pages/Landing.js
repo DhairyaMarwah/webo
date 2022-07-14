@@ -1,7 +1,7 @@
 import React from 'react'
 import Lottie from "react-lottie";
 import { motion } from "framer-motion"
-import Demo from "../images/demo.png";
+import Demo from "../images/demo1.png";
 import Orbit from "../images/orbit.mp4";
 import { Link } from 'react-router-dom';
 import * as animationData from '../animations/web4.json';
