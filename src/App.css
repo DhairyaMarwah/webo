@@ -111,6 +111,22 @@ font-size: 3.25rem; margin-bottom: 25px;
  .landing-1-btn button{color: #fff;}
  .footer-wrap{border-top: 1px solid rgba(255,255,255,0.13);}
  .design-section {width: 80%;margin: 0 auto;position: relative;top: -100px; }
- .design-section video{position: relative;top: -60px;z-index: -1;}
+ .design-section video{position: relative;top: -60px;z-index: -1;width: 100%;}
  .feautures-text p{margin-top: 20px;}
  .feautures-text >h1{font-size: 2.35rem;}
+ @media (max-width:400px) {
+  .landning-1-text>h1{
+    font-size: 1.6rem;
+  }
+  .landing-section1{
+    margin-top: 100px;width: 90%;
+  }
+  .landing-section1 button, .how-to-section button, .footer-first button{
+    font-size: 0.9rem;
+    padding: 0.9rem 1.2rem;
+  }
+  .landning-1-text p, .feautures-text >p, .how-to-section p, .create-steps li{
+    /* font-size: 1.7rem; */
+    font-size: clamp(0.8rem,1.3vw,0.9rem);
+  }
+ }
