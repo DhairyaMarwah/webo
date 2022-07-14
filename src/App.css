@@ -26,7 +26,7 @@ font-size: clamp(3rem,4vw,4.5rem);
 }
 .landning-1-text >h1{
   font-weight: 600;
-font-size: clamp(3rem,4vw,4.5rem);margin-bottom: 25px;
+font-size: 3.25rem; margin-bottom: 25px;
 }
 .feature-grid{display: flex;justify-content: space-around;align-items: center;}
 .landning-1-text p,.feautures-text >p,.how-to-section p,.create-steps li{
