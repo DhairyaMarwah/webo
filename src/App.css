@@ -10,6 +10,7 @@ body{
 }
 .landing-first-section,.features-section,.how-to-section{display: flex;width: 80%;margin: 0 auto;justify-content: space-between;align-items: center; }
 .features-section,.how-to-section{position: relative;top: -100px;}
+.how-to-section{top: -150px;}
 .feautres{position: relative;top: -50px;}
 .gjs-one-bg{
   background-color: #191919 !important;border: 1px solid rgba(255,255,255,0.1);
@@ -111,3 +112,5 @@ font-size: 3.25rem; margin-bottom: 25px;
  .footer-wrap{border-top: 1px solid rgba(255,255,255,0.13);}
  .design-section {width: 80%;margin: 0 auto;position: relative;top: -100px; }
  .design-section video{position: relative;top: -60px;z-index: -1;}
+ .feautures-text p{margin-top: 20px;}
+ .feautures-text >h1{font-size: 2.35rem;}
