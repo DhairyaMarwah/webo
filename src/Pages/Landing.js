@@ -2,6 +2,7 @@ import React from 'react'
 import Lottie from "react-lottie";
 import { motion } from "framer-motion"
 import Demo from "../images/demo.png";
+import Orbit from "../images/orbit.mp4";
 import { Link } from 'react-router-dom';
 import * as animationData from '../animations/web4.json';
 import * as animationData2 from '../animations/web5.json';
@@ -105,6 +106,12 @@ className="logo">
    </div>
         </div>
     </div>
+</div>
+<div className="design-section">
+    <h1>Create interactive designs</h1>
+    <video autoPlay loop muted  >
+        <source  src={Orbit}/>
+    </video>
 </div>
 <div className="how-to-section">
     <div className="how-to-text">

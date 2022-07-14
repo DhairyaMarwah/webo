@@ -109,3 +109,5 @@ font-size: clamp(3rem,4vw,4.5rem);margin-bottom: 25px;
  }
  .landing-1-btn button{color: #fff;}
  .footer-wrap{border-top: 1px solid rgba(255,255,255,0.13);}
+ .design-section {width: 80%;margin: 0 auto;position: relative;top: -100px; }
+ .design-section video{position: relative;top: -60px;z-index: -1;}
