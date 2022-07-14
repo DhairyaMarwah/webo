@@ -1,5 +1,6 @@
 import React from 'react'
 import Lottie from "react-lottie";
+import { motion } from "framer-motion"
 import Demo from "../images/demo.png";
 import { Link } from 'react-router-dom';
 import * as animationData from '../animations/web4.json';
@@ -35,7 +36,11 @@ const Landing = () => {
 //     </div>
 //   </div>
 <>
-<div className="logo">
+<motion.div 
+initial={{ opacity:0,y:-30 }}
+animate={{opacity:1, y: 0 }}
+transition={{ duration: 1,delay:0.5}} 
+className="logo">
 <svg width="100" height="49" viewBox="0 0 370 89" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_561_914)">
 <path d="M57.7631 0C67.5102 0 76.5076 3.10623 83.7911 8.35468C94.5023 4.17734 102 2.89201 106.499 3.85601C111.533 4.92712 113.782 8.03335 113.354 12.6391C113.14 15.6383 111.426 19.3872 108.32 23.4574C99.965 34.3827 80.1494 49.9139 52.0862 63.8384C69.8667 61.4819 86.576 55.5908 102.107 45.5223C101.465 69.4081 81.8631 88.5811 57.7631 88.5811C45.8737 88.5811 35.0555 83.8682 27.1292 76.1562C17.7034 79.6908 11.0625 80.6548 6.99231 79.7979C1.95808 78.7268 -0.291261 75.6206 0.030073 71.0148C0.244296 67.9086 2.06519 64.2668 5.17142 60.0895C13.5261 49.2712 33.2346 33.633 61.4049 19.7085C44.6955 21.9578 28.9501 27.3134 14.2759 36.3107C18.0248 15.6383 36.1266 0 57.7631 0ZM21.131 69.0868C19.3101 66.409 17.8106 63.517 16.5252 60.4108C14.8114 62.2317 13.3119 63.9455 12.1337 65.445C10.3128 67.9086 9.13454 69.8366 8.92031 71.229C11.1697 71.6575 15.2399 71.0148 21.131 69.0868ZM91.0747 14.9956C93.2169 17.5663 95.1449 20.244 96.7516 23.2432C98.5725 21.4223 100.072 19.7085 101.357 18.1018C103.178 15.6383 104.357 13.7103 104.571 12.4249C102.107 11.8894 97.7156 12.6391 91.0747 14.9956Z" fill="#F3F6F6"/>
@@ -48,9 +53,13 @@ const Landing = () => {
 </defs>
 </svg>
 
-</div>
+</motion.div>
 <div className="landing-section1">
-    <div className="landning-1-text">
+    <motion.div
+        initial={{ opacity:0,x:-50 }}
+        animate={{opacity:1, x: 0 }}
+        transition={{ duration: 1}} 
+    className="landning-1-text">
         <h1>Make Websites at the speed of thought</h1>
         <p>Take advantage of WEBo's free Website Builder to create a professional website for free! Start building your website today!</p>
         <div className="landing-1-btn">
@@ -59,7 +68,7 @@ const Landing = () => {
             </Link>
             <button className='secondary'>Learn More</button>
         </div>
-    </div>
+    </motion.div>
 </div>
 <div className="landing-section2">
     <div className="landing2-img">
