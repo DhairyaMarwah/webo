@@ -207,3 +207,13 @@ font-size: 3.25rem; margin-bottom: 25px;
   .app-logo{left: 60px;top: -4px;}
   .back{position: absolute;z-index: 4;top: -20px;left: 10px;}
   .back svg{width: 30px;top: 0;opacity: 0.8;}
+  .fav-logo{display: none;}
+  @media (max-width:700px) {
+    .fav-logo{display: block;position: absolute;z-index: 4;top: -25px;left: 30px;}
+    .fav-logo svg{width: 35px;}
+    .back svg{width: 15px;}
+    .app-logo{display: none;}
+    .gjs-pn-buttons .fa-desktop{position: relative;left: 80px;} 
+  .gjs-pn-buttons .fa-tablet{position: relative;left: 80px;} 
+  .gjs-pn-buttons .fa-mobile{position: relative;left: 80px;} 
+  }
