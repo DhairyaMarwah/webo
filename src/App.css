@@ -2,7 +2,7 @@
   margin: 0;padding: 0;box-sizing: border-box
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
-.logo{position: fixed;left: 20px;top: 10px;width: 50px;height: 50px;}
+.logo{position: fixed;left: 20px;top: 10px;width: 50px;height: 50px;z-index: 999;}
 body{
   background-color: #000;
   color: #fff;
@@ -11,7 +11,7 @@ body{
 .landing-first-section,.features-section,.how-to-section{display: flex;width: 80%;margin: 0 auto;justify-content: space-between;align-items: center; }
 .features-section,.how-to-section{position: relative;top: -100px;}
 .how-to-section{top: -150px;}
-.feautres{position: relative;top: -50px;}
+.feautres{position: relative;top: -50px;left: -40px;}
 .gjs-one-bg{
   background-color: #191919 !important;border: 1px solid rgba(255,255,255,0.1);
 }
@@ -25,7 +25,7 @@ body{
 font-weight: 600;
 font-size: clamp(3rem,4vw,4.5rem);
 }
-.landning-1-text >h1{
+.landning-1-text >h1,.about-page h1{
   font-weight: 600;
 font-size: 3.25rem; margin-bottom: 25px;
 }
@@ -82,15 +82,15 @@ font-size: 3.25rem; margin-bottom: 25px;
 }
 .landning-1-text{width: 80%;text-align: center;}
 .landing2-img {width: 90%;margin: 0 auto;position: relative;top: -100px;}
-.landing2-img img{width: 80%;margin: 0 auto;position: relative;left: 50px;}
-.landing-img-first{width: 60vw; }
+.landing2-img img{width: 100%;margin: 0 auto;position: relative; }
+.landing-img-first{width: 80vw;position: relative;left: -120px; }
 .feautres h1{
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
 }
 .feautres p{
-  font-size: 10px;margin-top: 2px;
-  font-weight: 400;opacity: 0.65;
+  font-size: 14px;margin-top: 2px;
+  font-weight: 400;opacity: 0.6;
 }
 
  .feautures-text >p{margin-bottom: 1rem;}
@@ -114,8 +114,51 @@ font-size: 3.25rem; margin-bottom: 25px;
  .design-section video{position: relative;top: -60px;z-index: -1;width: 100%;}
  .feautures-text p{margin-top: 20px;}
  .feautures-text >h1{font-size: 2.35rem;}
+ 
+ .landing2-img{width: 80%;}
+ .landing2-img img{
+  /* transform: rotate(-20deg); */
+ }
+ .landing2-img{
+  margin-top: 380px;margin-bottom: 150px;
+ }
+ .phone{width: 18vw !important;}
+ .second-laptop{top: 200px;z-index: -1;left: 100px;width: 80%;}
+ .landing2-img img:nth-child(1){
+  z-index: 2; 
+ }
+ button{
+  color: #fff !important;
+ }
+ .about-page {
+  width: 80%;margin: 0 auto;margin-top: 120px;text-align: center;
+ }
+ .about-page img{
+  width: 80vw;margin: 0 auto;transform: rotate(-20deg);margin-top: 100px;z-index: -1;
+ }
+ .about-page p{margin-top: 140px;
+  font-weight: 400; 
+    opacity: 0.65;
+    /* color: #7b7f9e; */
+  font-size: 1.1rem;margin-bottom: 100px;
+ }
+ .landing-wrap{overflow-x: hidden;}
+ @media (max-width:1000px) {
+  .how-to-section,.feature-grid{flex-direction: column;}
+  .landing-img-first{left: unset;}
+  .feautres{left: unset;top: unset;}
+  .how-to-img{width: 85vw;margin-top: 50px;}
+  .how-to-section{top: -50px;}
+  .landing2-img{margin-top: 100px;}
+  .second-laptop{top: 0px;}
+  .landing2-img{margin-bottom: 50px;}
+  .design-section{top: unset;margin-bottom: 90px;}
+  .footer{flex-direction: column;align-items: unset;}
+  .footer-first{margin-bottom: 40px;}
+  .feautures-text p{margin-top: 10px;}
+ }
  @media (max-width:450px) {
-  .landning-1-text>h1{
+  .landning-1-text>h1,.feautures-text >h1,.design-section >h1,.how-to-text>h1,.footer-contact>h1{
     font-size: 1.6rem;
   }
   .landing-section1{
@@ -129,4 +172,19 @@ font-size: 3.25rem; margin-bottom: 25px;
     /* font-size: 1.7rem; */
     font-size: clamp(0.8rem,1.3vw,0.9rem);
   }
+  .feautres h1{font-size: 16px;}
+  .feautres p{font-size: 13px;margin-top: 6px;}
  }
+ @media (max-width:550px) {
+  .design-section video{width: 130%;left: -50px;}
+  .landing2-img div:nth-child(1) img{left: -180px;width: 150% !important;}
+  .how-to-section p{margin-bottom: 1.2rem;}
+  .about-page p{
+    margin-top: 40px;font-size: 0.9rem;
+  }
+  .about-page h1{
+    font-size: 2.5rem;
+  }
+  .about-page img{margin-top: 60px;}
+ }
+  

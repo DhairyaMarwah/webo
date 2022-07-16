@@ -5,6 +5,7 @@ import {
     Route,
     useNavigate
   } from "react-router-dom";
+import About from "./Pages/About";
  import Landing from "./Pages/Landing";
 import WebBuilder from "./Pages/WebBuilder";
 export default function Navigation() { 
@@ -34,6 +35,7 @@ export default function Navigation() {
             <Routes>
                 <Route path="/" element={<Landing />} />
                 <Route path="/app" element={<WebBuilder />} />
+                <Route path="/about" element={<About />} />
             </Routes>
     )
 }

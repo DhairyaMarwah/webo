@@ -1,11 +1,16 @@
 import React from 'react'
 import Lottie from "react-lottie";
 import { motion } from "framer-motion"
-import Demo from "../images/demo1.png";
+// import Demo from "../images/demo2.svg";
+import Demo3 from "../images/demo3.svg";
+import Demo4 from "../images/demo4.svg";
+import Demo5 from "../images/demo5.svg";
 import Orbit from "../images/orbit.mp4";
 import { Link } from 'react-router-dom';
 import * as animationData from '../animations/web4.json';
 import * as animationData2 from '../animations/web5.json';
+import { Parallax } from "react-scroll-parallax";
+import { ParallaxProvider } from "react-scroll-parallax";
 const Landing = () => {
     const defaultOptions = {
         loop: true,
@@ -36,7 +41,8 @@ const Landing = () => {
 //     <Lottie options={defaultOptions} />
 //     </div>
 //   </div>
-<>
+<div className='landing-wrap'>
+<ParallaxProvider>
 <motion.div 
 initial={{ opacity:0,y:-30 }}
 animate={{opacity:1, y: 0 }}
@@ -67,13 +73,26 @@ className="logo">
             <Link to={'/app'}>
             <button className='primary'>Get Started</button>
             </Link>
+            <Link to={'/about'}>
+
             <button className='secondary'>Learn More</button>
+            </Link>
         </div>
     </motion.div>
 </div>
 <div className="landing-section2">
     <div className="landing2-img">
-        <img src={Demo} alt="" />
+    <Parallax speed={-2}>
+        <img src={Demo3} alt="" />
+        </Parallax>
+        <Parallax speed={window.innerWidth>1000?-20:-2}>
+
+        <img className='second-laptop' src={Demo4} alt="" />
+        </Parallax>
+        <Parallax speed={window.innerWidth>1000?37:20}>
+
+        <img className='phone' src={Demo5} alt="" />
+        </Parallax>
     </div>
 </div>
 <div className="features-section">
@@ -88,30 +107,33 @@ className="logo">
    </div>
    <div className="feautres">
          <div className="feature-1">
-            <h1>Responsive Design</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, non.</p>
+            <h1>Responsive Web Layouts</h1>
+            <p>One website for all devices – that’s the standard for today’s website design and development. </p>
          </div>
          <div className="feature-1 feature-2 ">
-            <h1>Responsive Design</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, non.</p>
+            <h1>Drag-n-Drop Editing</h1>
+            <p>Use drag and drop features to add contact forms, maps, blogs, videos, and photo galleries. </p>
          </div>
          <div className="feature-1 feature-2 ">
-            <h1>Responsive Design</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, non.</p>
+            <h1>Custom CSS</h1>
+            <p>High CSS customization to enable you to change templates to fit exactly what you envisioned.</p>
          </div>
          <div className="feature-1 feature-2 ">
-            <h1>Responsive Design</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, non.</p>
+            <h1>Display with Image Gallery</h1>
+            <p>Images are the core for any website. Choose a website design tool that makes external image databases easy to link too. </p>
          </div>
    </div>
         </div>
     </div>
 </div>
 <div className="design-section">
+    
     <h1>Create interactive designs</h1>
-    <video autoPlay loop muted  >
+
+    <video autoPlay loop muted playsinline >
         <source  src={Orbit}/>
     </video>
+     
 </div>
 <div className="how-to-section">
     <div className="how-to-text">
@@ -125,7 +147,9 @@ className="logo">
             <li>Get your free markdown code by clicking the download button</li>
         </ol>
     </div>
-    <button>Start now</button>
+    <Link to={'/app'}> 
+    <button>Start now</button> 
+            </Link>
     </div>
     <div className="how-to-img">
     <Lottie options={defaultOptions2}   />
@@ -149,7 +173,10 @@ className="logo">
 
         </div>
         <p>Build websites with a drag-and-drop interface. <br /> Content automatically optimises for device.</p>
+        <Link to={'/app'}>
+            {/* <button className='primary'>Get Started</button> */}
         <button>Build your Own Website</button>
+            </Link>
 
     </div>
     <div className="footer-contact">
@@ -160,7 +187,8 @@ className="logo">
     </div>
 </div>
 </div>
-</>
+</ParallaxProvider>
+</div>
 
   )
 }
