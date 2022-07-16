@@ -130,7 +130,7 @@ className="logo">
     
     <h1>Create interactive designs</h1>
 
-    <video autoPlay loop muted playsinline >
+    <video muted preload="auto" autoPlay loop  playsinline >
         <source  src={Orbit}/>
     </video>
      

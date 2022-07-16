@@ -23,7 +23,7 @@ className="logo">
 
 </motion.div>
   <div className="about-page">
-    <h1>About Webo</h1>
+    <h1>About WEBo</h1>
     <div className="about-img">
         <img src={Ab} alt="" />
     </div>

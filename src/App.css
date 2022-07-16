@@ -122,7 +122,7 @@ font-size: 3.25rem; margin-bottom: 25px;
  .landing2-img{
   margin-top: 380px;margin-bottom: 150px;
  }
- .phone{width: 18vw !important;}
+ .phone{width: 22vw !important;}
  .second-laptop{top: 200px;z-index: -1;left: 100px;width: 80%;}
  .landing2-img img:nth-child(1){
   z-index: 2; 
@@ -152,11 +152,15 @@ font-size: 3.25rem; margin-bottom: 25px;
   .landing2-img{margin-top: 100px;}
   .second-laptop{top: 0px;}
   .landing2-img{margin-bottom: 50px;}
-  .design-section{top: unset;margin-bottom: 90px;}
+  .design-section{top: unset;margin-bottom: 50px;}
   .footer{flex-direction: column;align-items: unset;}
   .footer-first{margin-bottom: 40px;}
   .feautures-text p{margin-top: 10px;}
   .phone{top: -80px;}
+  .design-section video{
+    margin-top: 60px;
+  }
+  .about-page{width: 85%;}
  }
  @media (max-width:450px) {
   .landning-1-text>h1,.feautures-text >h1,.design-section >h1,.how-to-text>h1,.footer-contact>h1{
@@ -177,7 +181,8 @@ font-size: 3.25rem; margin-bottom: 25px;
   .feautres p{font-size: 13px;margin-top: 6px;}
  }
  @media (max-width:550px) {
-  .design-section video{width: 130%;left: -50px;}
+  .design-section video{    width: 140%;
+    left: -62px;}
   .landing2-img div:nth-child(1) img{left: -180px;width: 150% !important;}
   .how-to-section p{margin-bottom: 1.2rem;}
   .about-page p{
