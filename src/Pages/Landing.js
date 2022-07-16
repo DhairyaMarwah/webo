@@ -89,7 +89,7 @@ className="logo">
 
         <img className='second-laptop' src={Demo4} alt="" />
         </Parallax>
-        <Parallax speed={window.innerWidth>1000?37:20}>
+        <Parallax speed={window.innerWidth>1000?37:16}>
 
         <img className='phone' src={Demo5} alt="" />
         </Parallax>

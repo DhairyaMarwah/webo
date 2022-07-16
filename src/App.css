@@ -156,6 +156,7 @@ font-size: 3.25rem; margin-bottom: 25px;
   .footer{flex-direction: column;align-items: unset;}
   .footer-first{margin-bottom: 40px;}
   .feautures-text p{margin-top: 10px;}
+  .phone{top: -80px;}
  }
  @media (max-width:450px) {
   .landning-1-text>h1,.feautures-text >h1,.design-section >h1,.how-to-text>h1,.footer-contact>h1{
