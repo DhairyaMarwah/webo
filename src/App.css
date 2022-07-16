@@ -120,7 +120,7 @@ font-size: 3.25rem; margin-bottom: 25px;
   /* transform: rotate(-20deg); */
  }
  .landing2-img{
-  margin-top: 380px;margin-bottom: 150px;
+  margin-top: 270px;margin-bottom: 150px;
  }
  .phone{width: 22vw !important;}
  .second-laptop{top: 200px;z-index: -1;left: 100px;width: 80%;}
@@ -193,4 +193,17 @@ font-size: 3.25rem; margin-bottom: 25px;
   }
   .about-page img{margin-top: 60px;}
  }
-  
+ .gjs-one-bg{
+
+   background-color: #463a3c;
+   box-shadow: 2.72076px 8px 24px rgb(0 0 0 / 38%) !important;
+   border: none !important;
+   border-radius: 14px;
+   color: rgba(255,255,255,0.5) !important;
+  }
+  .gjs-pn-buttons .fa-desktop{position: relative;left: 180px;} 
+  .gjs-pn-buttons .fa-tablet{position: relative;left: 180px;} 
+  .gjs-pn-buttons .fa-mobile{position: relative;left: 180px;} 
+  .app-logo{left: 60px;top: -4px;}
+  .back{position: absolute;z-index: 4;top: -20px;left: 10px;}
+  .back svg{width: 30px;top: 0;opacity: 0.8;}
