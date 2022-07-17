@@ -9,6 +9,8 @@
     "framer-motion": "^6.5.0",
     "grapesjs": "^0.19.5",
     "grapesjs-preset-webpage": "^0.1.11",
+    "grapesjs-project-manager": "^2.0.2",
+    "grapesjs-template-manager": "^1.0.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-lottie": "^1.2.3",
